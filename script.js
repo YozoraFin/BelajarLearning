@@ -10,14 +10,13 @@ $(document).on("scroll", () => {
     
     if($(this).scrollTop() > counterPos - 200 && counterTrigger) {
         const countdown = setInterval(() => {
-            count++
-            if(count <= 784/3) review.textContent = count*3
-            if(count <= 7*10) experience.textContent = Math.round(count/10)
-            if(count <= 245) student.textContent = count
-            if(count <= 120) material.textContent = count
+            count += 5
+            if(count <= 784) review.textContent = count
+            if(count <= 7*100) experience.textContent = Math.round(count/100)
+            if(count <= 245*3) student.textContent = Math.round(count/3)
+            if(count <= 120*6) material.textContent = Math.round(count/6)
             if(count === 1000) clearInterval(countdown)
-        }, 20)
-        console.log("Trigger!!")
+        }, 25) 
         counterTrigger = false
     }
 })

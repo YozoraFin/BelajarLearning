@@ -7,6 +7,10 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #5D12D2;
 }
 
+.primary-dark {
+    color: #4c11ab;
+}
+
 .secondary {
     color: #FFD700;
 }
@@ -18,6 +22,10 @@ p, h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
     -moz-box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
+}
+
+.home, .about, .pricing, .testimonial, .contact {
+    scroll-margin-top: 70px;
 }
 
 .navbar .nav-link {
@@ -108,7 +116,7 @@ p, h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: brightness(0.3);
+    filter: brightness(0.2) grayscale(100%);
     z-index: 1;
     background-image: url("https://img.freepik.com/free-photo/desk-workspace-with-various-elements_23-2148043180.jpg?t=st=1739603897~exp=1739607497~hmac=ea83639cdcca258e8ba65e19d994565620fdeda2e602bfd0586ca1d4eab5e2bc&w=1380");
     background-attachment: fixed;
@@ -122,5 +130,49 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .counter .item {
     background-color: rgb(34, 34, 34);
+    color: white;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    border-radius: 12px;
+}
+
+.pricing .item {
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing .item span {
+    background-color: #4c11ab;
+    color: white;
+    position: absolute;
+    padding: 10px 30px;
+    right: -35px;
+    top: 12px;
+    transform: rotateZ(45deg);
+}
+
+.pricing .btn {
+    border-radius: 999px;
+    background-color: #5D12D2;
+    color: white;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pricing .btn:hover {
+    transform: scale(110%);
+}
+
+.pricing .btn:active {
+    transform: scale(100%);
+    background-color: #5D12D2;
     color: white;
 }
