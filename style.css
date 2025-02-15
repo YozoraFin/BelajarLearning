@@ -1,40 +1,77 @@
+.primary {
+    color: #5D12D2;
+}
+
+.secondary {
+    color: #FFD700;
+}
+
 .navbar {
-    background-image: linear-gradient(to bottom, #5D12D2, #713ABE);
-    color: white;
-    height: 70px;
+    background-color: white;
+    color: #5D12D2 !important;
+    min-height: 70px;
     box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
     -moz-box-shadow: 0px 2px 5px 0px rgba(93,18,210,0.34);
 }
 
-.navbar .navbar-links .item {
+.navbar .nav-link {
+    color: #5D12D2 !important;
     transition: 0.3s;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.navbar .navbar-links .item:hover {
+.navbar .nav-link:hover {
     transform: scale(115%);
     cursor: pointer;
 }
 
-.navbar .navbar-links .item:active {
+.navbar .nav-link:active {
     transform: scale(100%);
 }
 
 .navbar .btn {
-    border: 2px solid white;
+    border: 2px solid #5D12D2;
     border-radius: 100px;
     padding: 10px 40px;
-    color: white;
+    color: #5D12D2;
     font-weight: 600;
     transition: 0.3s !important;
 }
 
 .navbar .btn:hover {
-    color: #5D12D2;
-    background-color: white;
+    color: white;
+    background-color: #5D12D2;
     transform: scale(110%);
 }
 
 .navbar .btn:active {
     transform: scale(100%);
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.hero .hero-background {
+    position: absolute;
+}
+
+.hero .hero-content {
+    color: white;
+    position: absolute;
+    padding: 40px;
+}
+
+.hero .cta {
+    background-color: #FFD700;
+    transition: 0.3s;
+}
+
+.hero .cta:hover {
+    color: black;
+    background-color: #ffee00;
+    transform: scale(120%);
 }
