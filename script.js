@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
 let counterTrigger = true
 $(document).on("scroll", () => {
     const counter = document.getElementById("counter")
@@ -18,5 +20,14 @@ $(document).on("scroll", () => {
             if(count === 1000) clearInterval(countdown)
         }, 25) 
         counterTrigger = false
+    }
+})
+
+new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: window.innerWidth < 1000 ? 1 : 3,
+    autoplay: {
+        delay: 2000
     }
 })
