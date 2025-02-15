@@ -1,3 +1,8 @@
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 .primary {
     color: #5D12D2;
 }
@@ -74,4 +79,43 @@
     color: black;
     background-color: #ffee00;
     transform: scale(120%);
+}
+
+.about img {
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .about img {
+        width: 100%;
+    }
+
+    .about p {
+        width: 100% !important;
+    }
+}
+
+.counter {
+    position: relative;
+}
+
+.counter .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3);
+    z-index: 1;
+    background-image: url("https://img.freepik.com/free-photo/silhouette-confident-businesspeople_1098-1768.jpg?t=st=1737963313~exp=1737966913~hmac=2c9a8d143b0bb99fc7f8876c9f3f2df7fede9a8f60f2cfb41b596629251cb636&w=1060");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.counter .content {
+    position: relative;
+    z-index: 2;
 }
