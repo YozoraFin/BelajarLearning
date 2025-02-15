@@ -106,6 +106,7 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
     border-radius: 12px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 600px) {
@@ -160,7 +161,7 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: rotateZ(45deg);
 }
 
-.pricing .btn {
+.pricing .btn, .contact .btn {
     border-radius: 999px;
     background-color: #5D12D2;
     color: white;
@@ -170,11 +171,11 @@ p, h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
-.pricing .btn:hover {
+.pricing .btn:hover, .contact .btn:hover {
     transform: scale(110%);
 }
 
-.pricing .btn:active {
+.pricing .btn:active, .contact .btn:active {
     transform: scale(100%);
     background-color: #5D12D2;
     color: white;
@@ -214,4 +215,22 @@ p, h1, h2, h3, h4, h5, h6 {
 .testimonial .item .body {
     margin-top: 75px;
     height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .contact {
+        padding: 0 80px;
+    }
+}
+
+.contact .map {
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.26);
+}
+
+.footer {
+    background-color: #4c11ab;
+    color: white;
 }
