@@ -110,7 +110,7 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 100%;
     filter: brightness(0.3);
     z-index: 1;
-    background-image: url("https://img.freepik.com/free-photo/silhouette-confident-businesspeople_1098-1768.jpg?t=st=1737963313~exp=1737966913~hmac=2c9a8d143b0bb99fc7f8876c9f3f2df7fede9a8f60f2cfb41b596629251cb636&w=1060");
+    background-image: url("https://img.freepik.com/free-photo/desk-workspace-with-various-elements_23-2148043180.jpg?t=st=1739603897~exp=1739607497~hmac=ea83639cdcca258e8ba65e19d994565620fdeda2e602bfd0586ca1d4eab5e2bc&w=1380");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -118,4 +118,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .counter .content {
     position: relative;
     z-index: 2;
+}
+
+.counter .item {
+    background-color: rgb(34, 34, 34);
+    color: white;
 }
